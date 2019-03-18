@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "943877997352",
+    "firebase_url": "https://dev-h-app.firebaseio.com",
+    "project_id": "dev-h-app",
+    "storage_bucket": "dev-h-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943877997352:android:070dba12b6f09c05",
+        "android_client_info": {
+          "package_name": "co.work.fukouka.happ"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943877997352-rm4cb8fm32lptb3vs2p811agc33e8dac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlTBpq1ESm6Oh50yr5NJs4pri9qYPkBNs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

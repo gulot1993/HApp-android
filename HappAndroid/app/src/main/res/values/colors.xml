@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/gray</color>
+    <color name="colorPrimaryDark">@color/stone</color>
+    <color name="colorAccent">@color/raven</color>
+
+    <color name="jet">#131516</color>
+    <color name="raven">#373D3F</color>
+    <color name="asher">#555F61</color>
+    <color name="stone">#707C80</color>
+    <color name="gray">#8C979A</color>
+    <color name="sterling">#A7B0B2</color>
+    <color name="heather">#C1C7C9</color>
+    <color name="pearl">#DADEDF</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="alpha">#e9dbc6</color>
+    <color name="beta">#272727</color>
+    <color name="charlie">#888888</color>
+    <color name="delta">#b5b5b5</color>
+    <color name="epsilon">#c7c7cc</color>
+    <color name="zeta">#eabd7a</color>
+    <color name="eta">#dddddd</color>
+    <color name="theta">#0076ff</color>
+    <color name="iota">#e2041b</color>
+    <color name="kappa">#888888</color>
+    <color name="lamda">#dfe3ee</color>
+    <color name="mu">#cccccc</color>
+
+
+</resources>

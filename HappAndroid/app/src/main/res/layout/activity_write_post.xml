@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="co.work.fukouka.happ.activity.WritePostActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/jet"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar">
+
+        <Button
+            android:id="@+id/btn_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:text="@string/post" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="8dp">
+
+            <EditText
+                android:id="@+id/et_post_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:hint="@string/enter_post_content"
+                android:inputType="textCapSentences|textMultiLine"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:orientation="horizontal"
+                android:id="@+id/main_layout">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:visibility="visible"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="8dp" />
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/iv_second_photo"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginRight="3dp"-->
+                        <!--android:layout_marginBottom="3dp"-->
+                        <!--android:layout_marginTop="3dp"-->
+                        <!--android:layout_marginLeft="3dp"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:src="@mipmap/temp_ic_nature"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/iv_second_x"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--app:srcCompat="@mipmap/ic_delete"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:visibility="visible"/>-->
+
+                <!--</RelativeLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_height="0dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_marginRight="3dp"-->
+                            <!--android:layout_marginBottom="3dp"-->
+                            <!--android:layout_marginTop="3dp"-->
+                            <!--android:scaleType="centerCrop"-->
+                            <!--android:src="@mipmap/temp_ic_nature"/>-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:srcCompat="@mipmap/ic_delete"-->
+                            <!--android:layout_alignParentTop="true"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:visibility="visible"/>-->
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:layout_height="0dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="1">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_marginRight="3dp"-->
+                            <!--android:layout_marginBottom="3dp"-->
+                            <!--android:scaleType="centerCrop"-->
+                            <!--android:src="@mipmap/temp_ic_nature"/>-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:srcCompat="@mipmap/ic_delete"-->
+                            <!--android:layout_alignParentTop="true"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:visibility="visible"/>-->
+
+                    <!--</RelativeLayout>-->
+
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <include
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_add_image"
+        android:gravity="bottom"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
